@@ -113,12 +113,12 @@ Fill up rest of the fields. Meaning of each field is discussed below:
 - `ACCOUNTS_ZIP_URL`: Only if you want to load your Service Account externally from an Index Link. Archive the accounts folder to a zip file. Fill this with the direct link of that file.
 - `TOKEN_PICKLE_URL`: Only if you want to load your **token.pickle** externally from an Index Link. Fill this with the direct link of that file.
 - `INDEX_URL`: Refer to https://gitlab.com/ParveenBhadooOfficial/Google-Drive-Index The URL should not have any trailing '/'
-- `DATABASE_URL`: Your Database URL. See [Generate Database](https://github.com/arshsisodiya/helios-mirror-public#generate-database) to generate database (**NOTE**: If you use database you can save your Sudo ID permanently using `/addsudo` command).
+- `DATABASE_URL`: Your Database URL. See [Generate Database](https://github.com/mallumovieleech/zkpmmleechmirror#generate-database) to generate database (**NOTE**: If you use database you can save your Sudo ID permanently using `/addsudo` command).
 - `AUTHORIZED_CHATS`: Fill user_id and chat_id (not username) of groups/users you want to authorize. Separate them with space, Examples: `-0123456789 -1122334455 6915401739`.
-- `AUTHOR_NAME`: Telegraph Author Name, Default is "Helios Mirror Bot"
-- `AUTHOR_URL`: Telegraph Author URL, Default is "https://t.me/heliosmirror"
-- `TITLE_NAME`: Telegraph Title Name, Default is "Helios Mirror Search"
-- `GD_INFO`: Google Drive File Discription, Default is "Uploaded by Helios Mirror Bot"
+- `AUTHOR_NAME`: Telegraph Author Name, Default is "Ølīvï@ ¢lãúdîä Mirror Bot"
+- `AUTHOR_URL`: Telegraph Author URL, Default is "https://t.me/zkp143"
+- `TITLE_NAME`: Telegraph Title Name, Default is "Mallu Movies Mirror Search"
+- `GD_INFO`: Google Drive File Discription, Default is "Uploaded by Ølīvï@ ¢lãúdîä Mirror Bot"
 - `HEROKU_APP_NAME`: Your Heroku App name
 - `HEROKU_API_KEY`: Heroku API Key
 - `LOGS_CHATS`: Fill chat_id of channel/group where you want to store logs. Separate them with space, Examples: `-0123456789 -1122334455 6915401739`
@@ -126,16 +126,16 @@ Fill up rest of the fields. Meaning of each field is discussed below:
 - `CHANNEL_USERNAME`: Channel Username for Force Subscribe bot, it's disabled by default so if you want to use it you have to 
 ```python3 -m bot & python3 fsub.py in start.sh```
 - 
-- `MULTI_SEARCH_URL`: run driveid.py [here](https://github.com/arshsisodiya/helios-mirror-private/blob/helios-mirror/driveid.py). Upload **drive_folder** file [here](https://gist.github.com/). Open the raw file of that gist, it's URL will be your required variable.
+- `MULTI_SEARCH_URL`: run driveid.py [here](https://github.com/mallumovieleech/zkpmmleechmirror-private/blob/helios-mirror/driveid.py). Upload **drive_folder** file [here](https://gist.github.com/). Open the raw file of that gist, it's URL will be your required variable.
 **Note remove commit id from the link**
 
 **Example:** <br> <br>
-`Before: https://gist.githubusercontent.com/arshsisodiya/8cce4a4b4e7f4ea47e948b2d058e52ac/raw/19ba5ab5eb43016422193319f28bc3c7dfb60f25/gist.txt` <br> <br>
-`After:  https://gist.githubusercontent.com/arshsisodiya/8cce4a4b4e7f4ea47e948b2d058e52ac/raw/gist.txt`
+`Before: https://gist.githubusercontent.com/mallumovieleech/8cce4a4b4e7f4ea47e948b2d058e52ac/raw/19ba5ab5eb43016422193319f28bc3c7dfb60f25/gist.txt` <br> <br>
+`After:  https://gist.githubusercontent.com/mallumovieleech/8cce4a4b4e7f4ea47e948b2d058e52ac/raw/gist.txt`
 
 - `SUDO_USERS`: Fill user_id (not username) of users whom you want to give sudo permission. Separate them with space, Examples: `0123456789 1122334455 6915401739` (**NOTE**: If you want to save Sudo ID permanently without database, you must fill your Sudo Id here).
 - `IS_TEAM_DRIVE`: Set to `True` if `GDRIVE_FOLDER_ID` is from a Team Drive else `False` or Leave it empty. `Bool`
-- `USE_SERVICE_ACCOUNTS`: (Leave empty if unsure) Whether to use Service Accounts or not. For this to work see [Using Service Accounts](https://github.com/arshsisodiya/helios-mirror-public#generate-service-accounts-what-is-service-account) section below.
+- `USE_SERVICE_ACCOUNTS`: (Leave empty if unsure) Whether to use Service Accounts or not. For this to work see [Using Service Accounts](https://github.com/mallumovieleech/zkpmmleechmirror#generate-service-accounts-what-is-service-account) section below.
 - `MEGA_API_KEY`: Mega.nz API key to mirror mega.nz links. Get it from [Mega SDK Page](https://mega.nz/sdk)
 - `MEGA_EMAIL_ID`: Your E-Mail ID used to sign up on mega.nz for using premium account (Leave though)
 - `MEGA_PASSWORD`: Your Password for your mega.nz account
@@ -157,7 +157,6 @@ Fill up rest of the fields. Meaning of each field is discussed below:
 - `AS_DOCUMENT`: Default Telegram file type upload. Empty or `False` means as media. `Bool`
 - `EQUAL_SPLITS`: Split files larger than **TG_SPLIT_SIZE** into equal parts size. `Bool`
 - `CUSTOM_FILENAME`: Add custom word to leeched file name.
-- `PHPSESSID` and `CRYPT`: Cookies for gdtot google drive link generator. Check setup [here](https://github.com/arshsisodiya/helios-mirror-public#gdtot-cookies)
 - `SHORTENER_API`: Fill your Shortener API key.
 - `SHORTENER`: Shortener URL.
 Supported URL Shorteners:
@@ -290,9 +289,6 @@ sudo docker image prune -a
 
 
 ## Deploying on Heroku
-- Deploying on Heroku with Github Workflow
-<p><a href="https://telegra.ph/Heroku-Deployment-10-04"> <img src="https://img.shields.io/badge/Deploy%20Guide-blueviolet?style=for-the-badge&logo=heroku" width="170""/></a></p>
-
 - Deploying on Heroku with heroku-cli and Goorm IDE
 <p><a href="https://telegra.ph/How-to-Deploy-a-Mirror-Bot-to-Heroku-with-CLI-05-06"> <img src="https://img.shields.io/badge/Deploy%20Guide-grey?style=for-the-badge&logo=telegraph" width="170""/></a></p>
 
@@ -388,28 +384,3 @@ Where host is the name of extractor (eg. Youtube, Twitch). Multiple accounts of 
 Where host is the name of extractor (eg. Twitch). Multiple accounts of different hosts can be added each separated by a new line.
 
 ---
-## Gdtot Cookies
-To Clone or Leech gdtot link follow these steps:
-1. Login/Register to [gdtot](https://new.gdtot.top)
-2. Copy this script and paste it in browser bar
-   ```
-   javascript:(function () {
-     const input = document.createElement('input');
-     input.value = JSON.stringify({url : window.location.href, cookie : document.cookie});
-     document.body.appendChild(input);
-     input.focus();
-     input.select();
-     var result = document.execCommand('copy');
-     document.body.removeChild(input);
-     if(result)
-       alert('Cookie copied to clipboard');
-     else
-       prompt('Failed to copy cookie. Manually copy below cookie\n\n', input.value);
-   })();
-   ```
-   - After pressing enter your browser will prompt a alert.
-3. Now you'll get this type of data in your clipboard
-   ```
-   {"url":"https://new.gdtot.org/","cookie":"PHPSESSID=k2xxxxxxxxxxxxxxxxxxxxj63o; crypt=NGxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxWdSVT0%3D"}
-   ```
-4. From this you have to paste value of PHPSESSID and crypt in config.env file.
