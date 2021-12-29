@@ -1,4 +1,4 @@
-FROM arshsisodiya/heliospublic:latest
+FROM mallumovieleech/zkpmmleechmirror:latest
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
